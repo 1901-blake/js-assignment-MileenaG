@@ -6,20 +6,20 @@ Reverse and return the String. */
 //A reverse string function writes the elements in a string backwards
 
 function reverseStr(someStr) {
-    let splitString = someStr.split(""); // ["h", "e", "l", "l", "o"] makes a new array
-    let reverseArray = splitString.reverse(); // ["o", "l", "l", "e", "h"] reverses array
-    let joinArray = reverseArray.join(""); // "olleh" joins all elements to make a single string
+    let splitString = someStr.split(''); //makes a new array where each letter is one element
+    let reverseArray = splitString.reverse(); //reverses array
+    let joinArray = reverseArray.join(''); //joins all elements to make a single string
     return joinArray;
 }
  
-result = reverseStr("hello");
+result = reverseStr('hello');
 console.log(result)
 //output: olleh
 
 
 //we can also chain all three methods together to keep it consice
 function reverseString(str) {
-    return str.split("").reverse().join("");
+    return str.split('').reverse().join('');
 }
-name = reverseString("Mileena");
+name = reverseString('Mileena');
 console.log(name)

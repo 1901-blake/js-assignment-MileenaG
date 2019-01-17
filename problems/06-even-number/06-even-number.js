@@ -15,6 +15,8 @@ function isEven(n) {
 //testing function
 even = isEven(4)
 odd = isEven(3)
+negative = isEven(-2)
 
 console.log(even)
 console.log(odd)
+console.log(negative)
