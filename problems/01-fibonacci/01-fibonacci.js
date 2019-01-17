@@ -10,6 +10,7 @@ function fib(n) {
 };
 
 
+
 //testing function by finding the first six terms in the sequence
 let first = fib(0);
 console.log(first);
