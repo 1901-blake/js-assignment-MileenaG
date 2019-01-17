@@ -19,7 +19,7 @@ function bubbleSort(numArray) {
     let x = numArray;           //the array
     do {
         swap = false;
-        for (let i=0; i < n; ++i) //i starts at 0, i is less than n, ++ incremets up. itterates at least n number of times
+        for (let i = 0; i < n; ++i) //i starts at 0, i is less than n, ++ incremets up. itterates at least n number of times
         {
             if (x[i] > x[i+1])  //if the previous number is larger then swapping will execute  
             {
