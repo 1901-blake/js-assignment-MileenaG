@@ -17,3 +17,5 @@ console.log(result)
 //without function
 let res = str.substring(8,19)
 console.log(res)
+
+//fix! No substring use loops
