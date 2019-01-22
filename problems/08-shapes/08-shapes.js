@@ -23,3 +23,22 @@ Example for printShape("Diamond", 5, "*");
 function printShape(shape, height, character) {
   
 }
+
+
+
+//triangle
+for(let i=1; i<=4; i++){
+   console.log('+'.repeat(i));
+}
+
+//square
+function square(x) {
+	let t = '';
+	let i;
+	for (i in x){
+		t += x[i] + '';
+		console.log(x.repeat(i));
+	}
+}
+let r = {character: '$', character: '$', character: '$'};
+result = square(r)
