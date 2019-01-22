@@ -9,32 +9,22 @@ let me = {
 	age: 23,
 }
 
-console.log(me)
-
-//constructor function
-function Users(name, age) {  
-	this.name = name;
-	this.age = age;
-}
-
-console.log(Users());
-
-
-
 //ES6 class
+//encapsulation
 class family {
-	constructor(name, age) {
+	constructor(name, age) {  //constructor function. NOT a function!
 		this.name = name;
 		this.age = age;
 	}
-	person() {
+	member() {
 		console.log(this.name + ' is ' + this.age);
 	}
-
 }
 
+//create a function!
+
 let mom = new family('Rebecca', 40);
-console.log(mom); //I'm just printing the new family memeber object
-mom.person()  //I'm accessing the person field in the family class
+console.log(mom);  //output: family { name: 'Rebecca', age: 40 }
+mom.member(); //output: Rebecca is 40
 
-
+console.log(me);
