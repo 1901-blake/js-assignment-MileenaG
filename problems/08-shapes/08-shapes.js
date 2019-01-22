@@ -21,24 +21,43 @@ Example for printShape("Diamond", 5, "*");
   * 
 */
 function printShape(shape, height, character) {
-  
-}
-
-
-
-//triangle
-for(let i=1; i<=4; i++){
-   console.log('+'.repeat(i));
-}
-
-//square
-function square(x) {
-	let t = '';
-	let i;
-	for (i in x){
-		t += x[i] + '';
-		console.log(x.repeat(i));
+	switch(shape) {
+		case 'square':
+		for (i = 0; i < height * height; i++){
+			if (i< height){
+				let square = '';
+				for (let j = 0; j < height; j++) {
+					square += character + '';
+				}
+				console.log(square);
+			}  
 	}
+			console.log('');
+		break;
+
+		case 'triangle':
+		for(let i = 1; i <= height; i++){
+   			console.log('+'.repeat(i));
+		}
+			console.log('');
+
+		break;
+
+		case 'diamond':
+		let j;
+		diamond = '';
+		for(i = 0; 1 < height * 2 - 1; i++) {
+			j = i < height ? i : height * 2 - i - 2;
+			diamond += Array(height - j).join(' ') + Array(j + 1).join(character + ' ') + `${character}\n`
+			}
+			console.log('');
+		break; 
+	}
+
+
 }
-let r = {character: '$', character: '$', character: '$'};
-result = square(r)
+
+printShape('square', 5, '$')
+printShape('triangle', 6, '@')
+printShape('diamond', 4, '*')
+
