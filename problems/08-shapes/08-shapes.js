@@ -46,13 +46,18 @@ function printShape(shape, height, character) {
 		case 'diamond':
 		let j;
 		diamond = '';
-		for(i = 0; 1 < height * 2 - 1; i++) {
+		for(i = 0; i < height * 2 - 1; i++) {
 			j = i < height ? i : height * 2 - i - 2;
-			diamond += Array(height - j).join(' ') + Array(j + 1).join(character + ' ') + `${character}\n`
+			diamond += Array(height - j).join(' ') + Array(j + 1).join(character + ' ') + `${character}\n`;
 			}
+			console.log(diamond);
+
 			console.log('');
-		break; 
-	}
+			break; 
+			default:
+			console.log(`${shape} is not a square, diamond, or triangle.`);
+			break;
+}
 
 
 }
